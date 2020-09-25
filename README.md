@@ -4,16 +4,17 @@ this file creates templates and static folders inside the app folder.
 
 ### Usage
 
-Place file in project directory, modify 
+Place file in project directory, modify:
 
 ```python
 projectName = 'PROJECT_NAME' # change to your project name
 app_name = 'APP_NAME' # change to your app name
  ```
 
-run file
 
-### File structure after
+then run file.
+
+### File structure after file run
 
 ```
 projectName/
