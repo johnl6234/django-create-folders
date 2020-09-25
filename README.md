@@ -6,7 +6,7 @@ this file creates templates and static folders inside the app folder.
 
 Place file in project directory, modify 
 
-```
+```python
 projectName = {PROJECT_NAME} # change to your project name
 app_name = {APP_NAME} # change to your app name
  ```
@@ -49,7 +49,7 @@ projectName/
 ```
 #### Settings.py
 
-```
+```python
 """
 Django settings for djangoTest project.
 
@@ -85,7 +85,7 @@ STATICFILES_DIRS = [
 
 #### projectName/urls.py
 
-```
+```python
 from django.contrib import admin
 from django.urls import path,include
 
@@ -96,7 +96,7 @@ urlpatterns = [
 ```
 #### app_name/urls.py
 
-```
+```python
 from django.urls import path
 from . import views
 
@@ -108,7 +108,7 @@ urlpatterns = [
 
 #### app_name/views.py
 
-```
+```python
 from django.shortcuts  import render
 
 def index(request):
@@ -117,7 +117,7 @@ def index(request):
 
 #### templates/app_name/base.html
 
-```
+```html
 {% load static %}
 
 <!DOCTYPE html>
@@ -135,7 +135,7 @@ def index(request):
 
 #### template/app_name/index.html
 
-```
+```html
 {% extends 'testApp/base.html'%}
 
 {% block content %}
