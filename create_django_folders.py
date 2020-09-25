@@ -3,8 +3,8 @@
 
 import os
 
-projectName = 'djangoTest' # change to project name
-app_name = 'testApp' # change to app name
+projectName = {PROJECT_NAME} # change to your project name
+app_name = {APP_NAME} # change to your app name
 
 os.chdir(app_name)
 
