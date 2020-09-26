@@ -18,7 +18,7 @@ if not os.path.exists(templates):
     # create base/index html files
     os.chdir(app_name)
     with open('base.html','x') as base:
-        base.write('''{% load static %}\n\n<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta charset="UTF-8">\n        <meta name="viewport" content="width=device-width, initial-scale=1">\n        <link rel="stylesheet" href="{% static 'styles.css' %}">\n    </head>\n<body>\n{% block content %}{% endblock %}\n</body>\n</html>''')
+        base.write('''{% load static %}\n\n<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta charset="UTF-8">\n        <meta name="viewport" content="width=device-width, initial-scale=1">\n        <link rel="stylesheet" href="{% static '" + app_name + "/CSS/styles.css' %}">\n    </head>\n<body>\n{% block content %}{% endblock %}\n</body>\n</html>''')
         base.close()
 
     with open('index.html','x') as index:
